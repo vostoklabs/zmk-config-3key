@@ -1,0 +1,40 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_layer_toggle {
+            timeout-ms = <50>;
+            key-positions = <1 2>; // Pins 002 & 009 (Middle and Right keys)
+            bindings = <&tog 1>;
+        };
+    };
+
+    behaviors {
+        vol_dn_studio: vol_dn_studio {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&studio_unlock>, <&kp>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp C_VOL_UP &kp C_PP &vol_dn_studio 0 C_VOL_DN
+            >;
+        };
+
+        bt_layer {
+            bindings = <
+                &bt BT_CLR_ALL &bt BT_SEL 1 &bt BT_SEL 0
+            >;
+        };
+    };
+};
