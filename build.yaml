@@ -19,7 +19,8 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: mini_keyboard
+    snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: mini_keyboard_with_studio

@@ -1,0 +1,150 @@
+                     
+ Usage: zmk          
+ [OPTIONS] COMMAND   
+ [ARGS]...           
+                     
+ ZMK Firmware        
+ command line tool   
+                     
+ Run "zmk init" to   
+ set up a ZMK config 
+ repo. All other     
+ "zmk" commands will 
+ run in this repo    
+ unless the current  
+ working directory   
+ is a different      
+ repo.               
+                     
++- Options ---------+
+| --…        PA  P… |
+|            TH  to |
+|                t… |
+|                Z… |
+|                C… |
+|                c… |
+|                f… |
+|                [… |
+|                v… |
+|                Z… |
+| --…            U… |
+|                t… |
+|                h… |
+|                d… |
+|                e… |
+|                if |
+|                t… |
+|                c… |
+|                d… |
+|                is |
+|                a  |
+|                r… |
+| --…            P… |
+|                v… |
+|                a… |
+|                e… |
+| --…            I… |
+|                c… |
+|                f… |
+|                t… |
+|                c… |
+|                s… |
+| --…            S… |
+|                c… |
+|                f… |
+|                t… |
+|                c… |
+|                s… |
+|                to |
+|                c… |
+|                it |
+|                or |
+|                c… |
+|                t… |
+|                i… |
+| --…            S… |
+|                t… |
+|                m… |
+|                a… |
+|                e… |
++-------------------+
++- Commands --------+
+| cd         Go to  |
+|            the    |
+|            ZMK    |
+|            config |
+|            repo.  |
+| code       Open   |
+|            the    |
+|            repo   |
+|            or a   |
+|            .keym… |
+|            or     |
+|            .conf  |
+|            file   |
+|            in a   |
+|            text   |
+|            edito… |
+| config     Get or |
+|            set    |
+|            ZMK    |
+|            CLI    |
+|            setti… |
+| download   Open   |
+|            the    |
+|            web    |
+|            page   |
+|            to     |
+|            downl… |
+|            firmw… |
+|            from   |
+|            GitHu… |
+| dl         Open   |
+|            the    |
+|            web    |
+|            page   |
+|            to     |
+|            downl… |
+|            firmw… |
+|            from   |
+|            GitHu… |
+| init       Create |
+|            a new  |
+|            ZMK    |
+|            config |
+|            repo   |
+|            or     |
+|            clone  |
+|            an     |
+|            exist… |
+|            one.   |
+| version    Get or |
+|            set    |
+|            the    |
+|            ZMK    |
+|            versi… |
+| update     Fetch  |
+|            the    |
+|            latest |
+|            keybo… |
+|            data.  |
+| west       Run    |
+|            west   |
+|            in the |
+|            config |
+|            repo.  |
+| keyboard   Add or |
+|            remove |
+|            keybo… |
+|            from   |
+|            the    |
+|            build. |
+| module     Add or |
+|            remove |
+|            Zephyr |
+|            modul… |
+|            from   |
+|            the    |
+|            build. |
++-------------------+
+
