@@ -13,12 +13,14 @@
     };
 
     behaviors {
+        // Simple hold-tap: Hold for Studio Unlock, Tap for Vol Down
+        // This avoids parameter mismatch issues
         vol_dn_studio: vol_dn_studio {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&studio_unlock>, <&kp>;
+            tapping-term-ms = <250>;
+            bindings = <&studio_unlock>, <&kp C_VOL_DN>;
         };
     };
 
@@ -27,7 +29,7 @@
 
         default_layer {
             bindings = <
-                &kp C_VOL_UP &kp C_PP &vol_dn_studio 0 C_VOL_DN
+                &kp C_VOL_UP &kp C_PP &vol_dn_studio
             >;
         };
 
