@@ -29,7 +29,7 @@
 
         default_layer {
             bindings = <
-                &kp C_VOL_UP &kp C_PP &vol_dn_studio 0 C_VOL_DN
+                &kp C_VOL_DN &kp C_PP &vol_dn_studio 0 C_VOL_UP
             >;
         };
 
